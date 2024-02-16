@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky navigation bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><div>Logo</div></a>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">More info</a></li>
+                <li><a href="#">Others</a></li>
+            </ul>
+        </a>
+    </header>
+    <section class="banner"></section>
+    <section class="banner2"></section>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+</body>
+</html>
